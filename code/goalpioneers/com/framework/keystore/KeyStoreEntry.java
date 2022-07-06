@@ -1,5 +1,6 @@
 package goalpioneers.com.framework.keystore;
 
+
 public class KeyStoreEntry 
 {
     
@@ -7,4 +8,5 @@ public class KeyStoreEntry
     {
         
     }
+    
 }
