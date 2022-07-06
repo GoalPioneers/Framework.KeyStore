@@ -1,7 +1,7 @@
-package goalpioneers.com.framework.keyStore.object;
+package goalpioneers.com.framework.keyStore.templates;
 
+import goalpioneers.com.framework.keyStore.objects.templates.KeyStoreElement;
 
-import goalpioneers.com.framework.keyStore.templates.templates.KeyStoreElement;
 
 /**
  * @author Kent Madsen

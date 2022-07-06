@@ -1,4 +1,4 @@
-package goalpioneers.com.framework.keyStore.templates.templates;
+package goalpioneers.com.framework.keyStore.objects.templates;
 
 
 /**

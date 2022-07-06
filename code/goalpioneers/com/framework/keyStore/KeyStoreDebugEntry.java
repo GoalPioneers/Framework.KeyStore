@@ -5,7 +5,7 @@ package goalpioneers.com.framework.keyStore;
  * @author Kent Madsen
  * @author Goal Pioneers
  */
-public class KeyStoreEntry 
+public class KeyStoreDebugEntry 
 {
     /**
      * @author Kent Madsen
