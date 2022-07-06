@@ -11,7 +11,8 @@ public class LineSeperator
      */
     public LineSeperator()
     {
-        this('-', 5 );
+        this('-', 
+             5 );
     }
     
     /**
@@ -20,7 +21,8 @@ public class LineSeperator
      */
     public LineSeperator( char seperatorCharacter )
     {
-        this( seperatorCharacter, 5 );
+        this( seperatorCharacter, 
+              5 );
     }
     
     
@@ -32,8 +34,13 @@ public class LineSeperator
     public LineSeperator( char seperatorCharacter, 
                           int lengthForSeperation )
     {
-        this.setSeperator( seperatorCharacter );
-        this.setLengthForSeperation( lengthForSeperation );
+        this.setSeperator( 
+                seperatorCharacter 
+        );
+        
+        this.setLengthForSeperation( 
+                lengthForSeperation 
+        );
     }
     
     
@@ -43,10 +50,23 @@ public class LineSeperator
      */
     private char seperator;
     
+    
     /**
      * 
      */
     private int lengthForSeperation;
+    
+    // Code
+    /**
+     * 
+     * @param index
+     * @return
+     */
+    public boolean shouldSeperate( int index )
+    {
+        return ( index % this.getLengthForSeperation() ) == 0;
+    }
+    
     
     // Accessor
     /**

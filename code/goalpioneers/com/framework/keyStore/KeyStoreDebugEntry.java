@@ -15,7 +15,9 @@ public class KeyStoreDebugEntry
      */
     public static void main( String[] args )
     {
-        UniqueObjectIdentifierObject UOIDObject = new UniqueObjectIdentifierObject(8 );
+        UniqueObjectIdentifierObject UOIDObject = 
+                new UniqueObjectIdentifierObject(20 );
+        
         System.out.println( UOIDObject.toString() );
     }
     

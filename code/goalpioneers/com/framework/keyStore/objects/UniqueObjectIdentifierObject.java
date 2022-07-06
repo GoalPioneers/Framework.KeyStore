@@ -199,11 +199,23 @@ public class UniqueObjectIdentifierObject
         StringBuilder builder = new StringBuilder();
         
         int idx;
+        int length = this.getCounters().size();
+        int length_limit = length - 1;
         
         for( idx = 0; 
-             idx < this.getCounters().size(); 
+             idx < length; 
              idx++ )
         {
+            boolean seperate = this.seperator.shouldSeperate( idx );
+            
+            boolean min = idx > 0;
+            boolean max = !( idx == length_limit );
+            
+            if( seperate && min && max)
+            {
+                builder.append( this.seperator.getSeperator() );
+            }
+            
             CharacterRangeIteratorFacade current = this.getCounters().get( idx );
             builder.append( current.position() );
         }
