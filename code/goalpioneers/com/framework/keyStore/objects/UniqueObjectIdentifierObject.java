@@ -15,6 +15,7 @@ import java.util.List;
 public class UniqueObjectIdentifierObject 
     implements UOID
 {
+    // Constructors
     /**
      * 
      */
@@ -111,7 +112,7 @@ public class UniqueObjectIdentifierObject
     @Override
     public String saveIdentifierReadable() 
     {
-        return null;
+        return this.toString();
     }
     
     
@@ -194,7 +195,7 @@ public class UniqueObjectIdentifierObject
      * @return 
      */
     @Override
-    public String toString() 
+    public final String toString() 
     {
         StringBuilder builder = new StringBuilder();
         
@@ -220,6 +221,29 @@ public class UniqueObjectIdentifierObject
             builder.append( current.position() );
         }
         
+        return builder.toString();
+    }
+    
+    
+    /**
+     * 
+     * @return
+     */
+    public final String toStringMachine()
+    {
+        StringBuilder builder = new StringBuilder();
+    
+        int idx;
+        int length = this.getCounters().size();
+    
+        for( idx = 0;
+             idx < length;
+             idx++ )
+        {
+            CharacterRangeIteratorFacade current = this.getCounters().get( idx );
+            builder.append( current.position() );
+        }
+    
         return builder.toString();
     }
 }
