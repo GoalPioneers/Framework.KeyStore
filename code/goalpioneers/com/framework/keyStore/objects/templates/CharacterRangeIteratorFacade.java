@@ -31,6 +31,7 @@ public interface CharacterRangeIteratorFacade
     public void map( char c );
     
     
+    
     /**
      * @author Kent Madsen
      * @author Goal Pioneers
