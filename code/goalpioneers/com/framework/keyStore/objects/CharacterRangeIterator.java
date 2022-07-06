@@ -2,14 +2,17 @@ package goalpioneers.com.framework.keyStore.objects;
 
 import goalpioneers.com.framework.keyStore.objects.templates.RangeIterator;
 
+
 /**
- * 
+ * @author Kent Madsen
+ * @author Goal Pioneers
  */
 public class CharacterRangeIterator 
     implements RangeIterator
 {
     /**
-     * 
+     * @author Kent Madsen
+     * @author Goal Pioneers
      */
     public CharacterRangeIterator()
     {
@@ -17,7 +20,8 @@ public class CharacterRangeIterator
     }
     
     /**
-     * 
+     * @author Kent Madsen
+     * @author Goal Pioneers
      * @param value
      */
     public CharacterRangeIterator( char value )
@@ -31,6 +35,11 @@ public class CharacterRangeIterator
     
     
     // Code
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
+     * @param c
+     */
     @Override 
     public void map( char c )
     {
@@ -39,7 +48,8 @@ public class CharacterRangeIterator
     
     
     /**
-     * 
+     * @author Kent Madsen
+     * @author Goal Pioneers
      * @return
      */
     @Override
@@ -50,7 +60,8 @@ public class CharacterRangeIterator
     
     
     /**
-     * 
+     * @author Kent Madsen
+     * @author Goal Pioneers
      * @param c
      * @return
      */
@@ -75,7 +86,8 @@ public class CharacterRangeIterator
     
     
     /**
-     * 
+     * @author Kent Madsen
+     * @author Goal Pioneers
      * @return
      */
     protected final int getValue() 
@@ -85,7 +97,8 @@ public class CharacterRangeIterator
     
     
     /**
-     * 
+     * @author Kent Madsen
+     * @author Goal Pioneers
      * @param value
      */
     protected final void setValue( int value ) 
