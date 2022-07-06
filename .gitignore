@@ -2,3 +2,6 @@
 
 .idea/*
 out/*
+
+javadocs/*
+!javadocs/readme.md

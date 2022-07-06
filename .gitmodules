@@ -1,0 +1,3 @@
+[submodule "algorithms"]
+	path = modules/algorithms
+	url = https://github.com/GoalPioneers/Algorithms.Java.git
