@@ -15,7 +15,51 @@ public class KeyStoreFramework
      * @param element
      */
     @Override
-    public void store( String key, KeyStoreElement element ) 
+    public void store( String key, 
+                       KeyStoreElement element ) 
+    {
+        
+    }
+    
+    
+    /**
+     * 
+     * @param key
+     * @return
+     */
+    @Override
+    public KeyStoreElement retrieve( String key ) 
+    {
+        return null;
+    }
+    
+    
+    /**
+     * 
+     * @param key
+     */
+    @Override
+    public void remove( String key ) 
+    {
+        
+    }
+    
+    
+    /**
+     * 
+     */
+    @Override
+    public void optimize() 
+    {
+        
+    }
+    
+    
+    /**
+     * 
+     */
+    @Override
+    public void garbageCollection() 
     {
         
     }

@@ -8,7 +8,6 @@ package goalpioneers.com.framework.keystore;
 public class KeyStoreEntry 
 {
     /**
-     *
      * @author Kent Madsen
      * @author Goal Pioneers
      * @param args
