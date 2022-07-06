@@ -62,7 +62,8 @@ public class CharacterRangeIterator
     @Override
     public char position()
     {
-        return (char) this.getValue();
+        int r = startAlphabetAt() + this.getValue();
+        return (char) r;
     }
     
     
@@ -85,7 +86,16 @@ public class CharacterRangeIterator
     @Override
     public void next() 
     {
+        int r = this.value + 1;
         
+        int range = this.endAlphabetAt() - this.startAlphabetAt();
+        
+        if( r > ( range ) )
+        {
+            r = r % ( range + 1 );
+        }
+        
+        this.setValue( r );
     }
     
     
@@ -96,7 +106,15 @@ public class CharacterRangeIterator
     @Override
     public void previous() 
     {
+        int i = this.value - 1;
+        int range = this.endAlphabetAt() - this.startAlphabetAt();
         
+        if( i < 0 )
+        {
+            i = (range + 1) + i;
+        }
+        
+        this.setValue( i );
     }
     
     

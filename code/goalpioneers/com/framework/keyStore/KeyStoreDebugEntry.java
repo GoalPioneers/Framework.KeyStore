@@ -16,9 +16,19 @@ public class KeyStoreDebugEntry
      */
     public static void main( String[] args )
     {
-        CharacterRangeIterator iterator = new CharacterRangeIterator('a' );
+        CharacterRangeIterator iterator = new CharacterRangeIterator('z' );
         
-        System.out.println( iterator.getValue() );
+        for( int x = 0; 
+                 x < 45; 
+                 x++ )
+        {
+            System.out.print( iterator.position() );
+            System.out.print(" ");
+            System.out.print(iterator.getValue());
+            System.out.println();
+            
+            iterator.previous();
+        }
     }
     
 }
