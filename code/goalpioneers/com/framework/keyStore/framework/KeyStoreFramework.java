@@ -1,5 +1,8 @@
-package goalpioneers.com.framework.keystore;
+package goalpioneers.com.framework.keyStore.framework;
 
+
+import goalpioneers.com.framework.keyStore.templates.templates.KeyStoreElement;
+import goalpioneers.com.framework.keyStore.object.KeyStoreInterface;
 
 /**
  * @author Kent Madsen

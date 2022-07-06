@@ -1,4 +1,4 @@
-package goalpioneers.com.framework.keystore;
+package goalpioneers.com.framework.keyStore;
 
 
 /**
