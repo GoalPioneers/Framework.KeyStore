@@ -10,8 +10,7 @@ import goalpioneers.com.framework.keyStore.objects.UniqueObjectIdentifierObject;
 public class KeyStoreDebugEntry 
 {
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param args
      */
     public static void main( String[] args )

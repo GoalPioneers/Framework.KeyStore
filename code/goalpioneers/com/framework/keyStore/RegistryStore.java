@@ -11,15 +11,13 @@ import goalpioneers.com.framework.keyStore.templates.KeyStoreInterface;
 public class RegistryStore 
 {
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     private static KeyStoreInterface KStore = null;
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     public static KeyStoreInterface getStore()
@@ -34,8 +32,7 @@ public class RegistryStore
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param store
      */
     protected static void setStore( KeyStoreInterface store )

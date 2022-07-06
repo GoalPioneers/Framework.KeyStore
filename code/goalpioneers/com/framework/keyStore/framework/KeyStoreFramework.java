@@ -13,8 +13,7 @@ public class KeyStoreFramework
         implements KeyStoreInterface
 {
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param key
      * @param element
      */
@@ -27,8 +26,7 @@ public class KeyStoreFramework
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param key
      * @return
      */
@@ -40,8 +38,7 @@ public class KeyStoreFramework
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param key
      */
     @Override
@@ -52,8 +49,7 @@ public class KeyStoreFramework
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     @Override
     public void optimize() 
@@ -63,8 +59,7 @@ public class KeyStoreFramework
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     @Override
     public void garbageCollection() 

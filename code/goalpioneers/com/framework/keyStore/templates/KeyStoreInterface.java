@@ -10,8 +10,7 @@ import goalpioneers.com.framework.keyStore.objects.templates.KeyStoreElement;
 public interface KeyStoreInterface 
 {
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param key
      * @param element
      */
@@ -19,8 +18,7 @@ public interface KeyStoreInterface
                        KeyStoreElement element );
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param key
      * @return
      */
@@ -28,23 +26,20 @@ public interface KeyStoreInterface
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param key
      */
     public void remove( String key );
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     public void optimize();
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     public void garbageCollection();
 }

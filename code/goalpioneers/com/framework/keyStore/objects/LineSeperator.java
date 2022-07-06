@@ -7,8 +7,25 @@ package goalpioneers.com.framework.keyStore.objects;
 public class LineSeperator 
 {
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
+     */
+    public LineSeperator()
+    {
+        this('-', 5 );
+    }
+    
+    /**
+     * 
+     * @param seperatorCharacter
+     */
+    public LineSeperator( char seperatorCharacter )
+    {
+        this( seperatorCharacter, 5 );
+    }
+    
+    
+    /**
+     * 
      * @param seperatorCharacter
      * @param lengthForSeperation
      */
@@ -22,21 +39,18 @@ public class LineSeperator
     
     // Variables
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     private char seperator;
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     private int lengthForSeperation;
     
     // Accessor
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     public char getSeperator() 
@@ -46,8 +60,7 @@ public class LineSeperator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param seperator
      */
     public void setSeperator( char seperator ) 
@@ -57,8 +70,7 @@ public class LineSeperator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     public int getLengthForSeperation() 
@@ -68,8 +80,7 @@ public class LineSeperator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param lengthForSeperation
      */
     protected void setLengthForSeperation( int lengthForSeperation ) 

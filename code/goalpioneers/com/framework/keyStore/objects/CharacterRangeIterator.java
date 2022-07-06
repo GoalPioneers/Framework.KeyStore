@@ -12,8 +12,7 @@ public class CharacterRangeIterator
 {
     // Constructors
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     public CharacterRangeIterator()
     {
@@ -22,8 +21,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param value
      */
     public CharacterRangeIterator( char value )
@@ -34,13 +32,15 @@ public class CharacterRangeIterator
     
     
     // Variables
+    /**
+     * 
+     */
     private int value = -1;
     
     
     // Code
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param c
      */
     @Override 
@@ -55,8 +55,9 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * retrieves the appropiate character that are associated with the number. 
+     * converts it from relative to the actual id for a given character in
+     * the alphabet
      * @return
      */
     @Override
@@ -68,8 +69,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     @Override
@@ -80,8 +80,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     @Override
     public void next() 
@@ -100,8 +99,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      */
     @Override
     public void previous() 
@@ -119,8 +117,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param c
      * @return
      */
@@ -145,8 +142,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     protected int startAlphabetAt()
@@ -157,8 +153,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     protected int endAlphabetAt()
@@ -170,8 +165,7 @@ public class CharacterRangeIterator
     
     // Accessors
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     public final int getValue() 
@@ -181,8 +175,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @param value
      */
     protected final void setValue( int value ) 
@@ -192,8 +185,7 @@ public class CharacterRangeIterator
     
     
     /**
-     * @author Kent Madsen
-     * @author Goal Pioneers
+     * 
      * @return
      */
     public boolean isNotInitialised()
