@@ -46,7 +46,11 @@ public class CharacterRangeIterator
     @Override 
     public void map( char c )
     {
-        
+        if( this.isWithinRange( c ) )
+        {
+            int position = (int)c - this.startAlphabetAt();
+            this.setValue( position );
+        }
     }
     
     
@@ -121,24 +125,38 @@ public class CharacterRangeIterator
         return completeValue;
     }
     
-    protected int startAlphabetAt()
-    {
-        char c = 'a';
-        return ( int )c;
-    }
-    
-    protected int endAlphabetAt()
-    {
-        char c = 'z';
-        return ( int )c;
-    }
     
     /**
      * @author Kent Madsen
      * @author Goal Pioneers
      * @return
      */
-    protected final int getValue() 
+    protected int startAlphabetAt()
+    {
+        char c = 'a';
+        return ( int )c;
+    }
+    
+    
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
+     * @return
+     */
+    protected int endAlphabetAt()
+    {
+        char c = 'z';
+        return ( int )c;
+    }
+    
+    
+    // Accessors
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
+     * @return
+     */
+    public final int getValue() 
     {
         return value;
     }
@@ -152,5 +170,23 @@ public class CharacterRangeIterator
     protected final void setValue( int value ) 
     {
         this.value = value;
+    }
+    
+    
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
+     * @return
+     */
+    public boolean isNotInitialised()
+    {
+        boolean complete = false;
+        
+        if( this.getValue() == -1 )
+        {
+            complete = !complete;
+        }
+        
+        return complete;
     }
 }

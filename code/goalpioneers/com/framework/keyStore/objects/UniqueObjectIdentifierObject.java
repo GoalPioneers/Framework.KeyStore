@@ -7,6 +7,7 @@ package goalpioneers.com.framework.keyStore.objects;
  * @author Goal Pioneers
  */
 public class UniqueObjectIdentifierObject 
+    implements UOID
 {
     /**
      * @author Kent Madsen

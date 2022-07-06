@@ -1,5 +1,7 @@
 package goalpioneers.com.framework.keyStore;
 
+import goalpioneers.com.framework.keyStore.objects.CharacterRangeIterator;
+
 
 /**
  * @author Kent Madsen
@@ -14,15 +16,9 @@ public class KeyStoreDebugEntry
      */
     public static void main( String[] args )
     {
-        char c = 'a';
-        char e = 'z';
+        CharacterRangeIterator iterator = new CharacterRangeIterator('a' );
         
-        char m = 'b';
-        int r = (int)m - (int)c;
-        
-        System.out.println((int)c);
-        System.out.println((int)e);
-        System.out.println(r);
+        System.out.println( iterator.getValue() );
     }
     
 }
