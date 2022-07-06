@@ -1,6 +1,6 @@
 package goalpioneers.com.framework.keyStore.objects;
 
-import goalpioneers.com.framework.keyStore.objects.templates.RangeIterator;
+import goalpioneers.com.framework.keyStore.objects.templates.CharacterRangeIteratorFacade;
 
 
 /**
@@ -8,8 +8,9 @@ import goalpioneers.com.framework.keyStore.objects.templates.RangeIterator;
  * @author Goal Pioneers
  */
 public class CharacterRangeIterator 
-    implements RangeIterator
+    implements CharacterRangeIteratorFacade
 {
+    // Constructors
     /**
      * @author Kent Madsen
      * @author Goal Pioneers
@@ -19,6 +20,7 @@ public class CharacterRangeIterator
         
     }
     
+    
     /**
      * @author Kent Madsen
      * @author Goal Pioneers
@@ -26,7 +28,8 @@ public class CharacterRangeIterator
      */
     public CharacterRangeIterator( char value )
     {
-        
+        super();
+        this.map( value );
     }
     
     
@@ -62,6 +65,40 @@ public class CharacterRangeIterator
     /**
      * @author Kent Madsen
      * @author Goal Pioneers
+     * @return
+     */
+    @Override
+    public int relativePosition() 
+    {
+        return this.value;
+    }
+    
+    
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
+     */
+    @Override
+    public void next() 
+    {
+        
+    }
+    
+    
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
+     */
+    @Override
+    public void previous() 
+    {
+        
+    }
+    
+    
+    /**
+     * @author Kent Madsen
+     * @author Goal Pioneers
      * @param c
      * @return
      */
@@ -84,6 +121,17 @@ public class CharacterRangeIterator
         return completeValue;
     }
     
+    protected int startAlphabetAt()
+    {
+        char c = 'a';
+        return ( int )c;
+    }
+    
+    protected int endAlphabetAt()
+    {
+        char c = 'z';
+        return ( int )c;
+    }
     
     /**
      * @author Kent Madsen
