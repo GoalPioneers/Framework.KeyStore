@@ -1,6 +1,6 @@
 package goalpioneers.com.framework.keyStore;
 
-import goalpioneers.com.framework.keyStore.objects.CharacterRangeIterator;
+import goalpioneers.com.framework.keyStore.objects.UniqueObjectIdentifierObject;
 
 
 /**
@@ -16,19 +16,8 @@ public class KeyStoreDebugEntry
      */
     public static void main( String[] args )
     {
-        CharacterRangeIterator iterator = new CharacterRangeIterator('z' );
-        
-        for( int x = 0; 
-                 x < 45; 
-                 x++ )
-        {
-            System.out.print( iterator.position() );
-            System.out.print(" ");
-            System.out.print(iterator.getValue());
-            System.out.println();
-            
-            iterator.previous();
-        }
+        UniqueObjectIdentifierObject UOIDObject = new UniqueObjectIdentifierObject(8 );
+        System.out.println( UOIDObject.toString() );
     }
     
 }
