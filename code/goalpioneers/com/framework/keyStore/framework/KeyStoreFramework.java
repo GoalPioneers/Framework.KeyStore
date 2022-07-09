@@ -1,6 +1,6 @@
 package goalpioneers.com.framework.keyStore.framework;
 
-import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreElement;
+import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreGroup;
 import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
 
 
@@ -54,7 +54,7 @@ public class KeyStoreFramework
      */
     @Override
     public void store( String key, 
-                       KeyStoreElement element ) 
+                       KeyStoreGroup element ) 
     {
         
     }
@@ -66,7 +66,7 @@ public class KeyStoreFramework
      * @return
      */
     @Override
-    public KeyStoreElement retrieve( String key ) 
+    public KeyStoreGroup retrieve(String key ) 
     {
         return null;
     }
