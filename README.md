@@ -21,3 +21,7 @@ Persistence Options - Keep in mind their optional:
 * Online
   * MySQL
   * Redis
+
+
+## Preview
+![preview image](preview.jpg)
