@@ -9,12 +9,19 @@ import goalpioneers.com.framework.keyStore.framework.hashes.KeyStoreHash;
 public abstract class KeyStoreHashFilesBaseTemplate 
         implements KeyStoreHash
 {
+    // Variables
     /**
      * 
      */
     private String hash = null;
     
+    /**
+     * 
+     */
+    private String filePath = null;
     
+    
+    // State Accessors
     /**
      * 
      * @return
@@ -22,6 +29,15 @@ public abstract class KeyStoreHashFilesBaseTemplate
     public final boolean isHashEmpty()
     {
         return ( hash == null );
+    }
+    
+    /**
+     * 
+     * @return
+     */
+    public final boolean isFilePathEmpty()
+    {
+        return ( this.filePath == null );
     }
     
     
@@ -35,6 +51,15 @@ public abstract class KeyStoreHashFilesBaseTemplate
         return hash;
     }
     
+    /**
+     * 
+     * @return
+     */
+    public String getFilePath() 
+    {
+        return filePath;
+    }
+    
     
     /**
      * 
@@ -43,5 +68,14 @@ public abstract class KeyStoreHashFilesBaseTemplate
     public final void setHash( String hash ) 
     {
         this.hash = hash;
+    }
+    
+    /**
+     * 
+     * @param filePath
+     */
+    public void setFilePath( String filePath ) 
+    {
+        this.filePath = filePath;
     }
 }
