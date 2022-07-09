@@ -18,6 +18,10 @@ public class KeyStoreProperty
         this.setEntries( 
                 new ArrayList< KeyStorePropertyEntry >() 
         );
+        
+        this.setFormat(
+                KeyStorePropertyFormat.Default 
+        );
     }
     
     
@@ -26,6 +30,11 @@ public class KeyStoreProperty
      * 
      */
     private List<KeyStorePropertyEntry> entries = null;
+    
+    /**
+     * 
+     */
+    private KeyStorePropertyFormat format = null;
     
     
     // Accessors
@@ -38,13 +47,45 @@ public class KeyStoreProperty
         return entries;
     }
     
+    /**
+     * 
+     * @return
+     */
+    public KeyStorePropertyFormat getFormat() 
+    {
+        return format;
+    }
     
+    // Setters
     /**
      * 
      * @param entries
      */
-    public void setEntries( List< KeyStorePropertyEntry > entries ) 
+    protected void setEntries( List< KeyStorePropertyEntry > entries ) 
     {
         this.entries = entries;
+    }
+    
+    /**
+     * 
+     * @param format
+     */
+    public void setFormat( KeyStorePropertyFormat format )
+    {
+        this.format = format;
+    }
+    
+    
+    // State
+    
+    // Object Extensions
+    /**
+     * 
+     * @return
+     */
+    @Override
+    public String toString() 
+    {
+        return super.toString();
     }
 }
