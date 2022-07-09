@@ -22,22 +22,22 @@ public class UniqueObjectIdentifierObject
     public UniqueObjectIdentifierObject( int number_of_counters )
     {
         this( number_of_counters, 
-              new LineSeperator() );
+              new LineSeparator() );
     }
     
     
     /**
      * 
      * @param number_of_counters
-     * @param seperator
+     * @param separator
      */
-    public UniqueObjectIdentifierObject( int number_of_counters, 
-                                         LineSeperator seperator )
+    public UniqueObjectIdentifierObject( int number_of_counters,
+                                         LineSeparator separator )
     {
         this.counters = new ArrayList<>();
         
         this.insertCounter( number_of_counters );
-        this.setSeperator( seperator );
+        this.setSeparator( separator );
     }
     
     // Variables
@@ -49,7 +49,9 @@ public class UniqueObjectIdentifierObject
     /**
      * 
      */
-    private LineSeperator seperator = null;
+    private LineSeparator separator = null;
+    
+    private static char begin = 'a';
     
     
     // Code
@@ -66,7 +68,7 @@ public class UniqueObjectIdentifierObject
              x++ )
         {
             this.counters.add(
-                    new CharacterRangeIterator( 'a' )
+                    new CharacterRangeIterator( this.begin )
             );
         }
     }
@@ -174,19 +176,19 @@ public class UniqueObjectIdentifierObject
      * 
      * @return
      */
-    public LineSeperator getSeperator() 
+    public LineSeparator getSeparator() 
     {
-        return seperator;
+        return separator;
     }
     
     
     /**
      * 
-     * @param seperator
+     * @param separator
      */
-    protected void setSeperator( LineSeperator seperator ) 
+    protected void setSeparator( LineSeparator separator) 
     {
-        this.seperator = seperator;
+        this.separator = separator;
     }
     
     
@@ -207,14 +209,14 @@ public class UniqueObjectIdentifierObject
              idx < length; 
              idx++ )
         {
-            boolean seperate = this.seperator.shouldSeperate( idx );
+            boolean seperate = this.separator.shouldSeparate( idx );
             
             boolean min = idx > 0;
             boolean max = !( idx == length_limit );
             
             if( seperate && min && max)
             {
-                builder.append( this.seperator.getSeperator() );
+                builder.append( this.separator.getSeparator() );
             }
             
             CharacterRangeIteratorFacade current = this.getCounters().get( idx );

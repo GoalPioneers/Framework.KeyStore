@@ -37,6 +37,8 @@ public class CharacterRangeIterator
      */
     private int value = -1;
     
+    private static char begin = 'a'; 
+    private static char end = 'z';
     
     // Code
     /**
@@ -127,8 +129,8 @@ public class CharacterRangeIterator
         char C = Character.toLowerCase( c );
         
         // Character Range Limits
-        boolean leftLimit  = ( 'a' <= C );
-        boolean rightLimit = ( 'z' >= C );
+        boolean leftLimit  = ( begin <= C );
+        boolean rightLimit = ( end >= C );
         
         boolean completeValue = false;
         
@@ -147,7 +149,7 @@ public class CharacterRangeIterator
      */
     protected int startAlphabetAt()
     {
-        char c = 'a';
+        char c = begin;
         return ( int )c;
     }
     
@@ -158,7 +160,7 @@ public class CharacterRangeIterator
      */
     protected int endAlphabetAt()
     {
-        char c = 'z';
+        char c = end;
         return ( int )c;
     }
     
