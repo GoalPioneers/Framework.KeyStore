@@ -1,6 +1,4 @@
-package goalpioneers.com.framework.keyStore.templates;
-
-import goalpioneers.com.framework.keyStore.objects.templates.KeyStoreElement;
+package goalpioneers.com.framework.keyStore.framework.templates;
 
 
 /**
@@ -10,7 +8,7 @@ import goalpioneers.com.framework.keyStore.objects.templates.KeyStoreElement;
 public interface KeyStoreInterface 
 {
     /**
-     * 
+     * Saves an object in memory.
      * @param key
      * @param element
      */
@@ -18,7 +16,7 @@ public interface KeyStoreInterface
                        KeyStoreElement element );
     
     /**
-     * 
+     * Retrieves an object from memory
      * @param key
      * @return
      */
@@ -26,20 +24,20 @@ public interface KeyStoreInterface
     
     
     /**
-     * 
+     * removal of an object in memory
      * @param key
      */
     public void remove( String key );
     
     
     /**
-     * 
+     * Optimizes the algorithm
      */
     public void optimize();
     
     
     /**
-     * 
+     * Get rid of files
      */
     public void garbageCollection();
 }
