@@ -2,7 +2,8 @@ package goalpioneers.com.framework.keyStore.framework.properties;
 
 
 /**
- * 
+ * @author Kent Madsen
+ * @author Goal Pioneers
  */
 public abstract class KeyStorePropertyEntry 
 {
@@ -12,11 +13,13 @@ public abstract class KeyStorePropertyEntry
         this.setName( labelName );
     }
     
+    
     // variables
     private String name = null;
     
     
     // accessors
+    // getters
     /**
      * 
      * @return
@@ -27,6 +30,14 @@ public abstract class KeyStorePropertyEntry
     }
     
     /**
+     *
+     * @return
+     */
+    public abstract String getValue();
+    
+    
+    // setters
+    /**
      * 
      * @param name
      */
@@ -34,11 +45,4 @@ public abstract class KeyStorePropertyEntry
     {
         this.name = name;
     }
-    
-    
-    /**
-     * 
-     * @return
-     */
-    public abstract String getValue();
 }

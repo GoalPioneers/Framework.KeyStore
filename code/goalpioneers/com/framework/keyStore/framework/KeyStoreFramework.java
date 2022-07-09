@@ -5,7 +5,7 @@ import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface
 
 
 /**
- * 
+ * Sets the main Store globally.
  * @author Kent Madsen
  * @author Goal Pioneers
  */
@@ -66,7 +66,7 @@ public class KeyStoreFramework
      * @return
      */
     @Override
-    public KeyStoreGroup retrieve(String key ) 
+    public KeyStoreGroup retrieve( String key ) 
     {
         return null;
     }
@@ -127,7 +127,7 @@ public class KeyStoreFramework
      * 
      * @param path
      */
-    public final void setPath( String path ) 
+    protected final void setPath( String path ) 
     {
         this.path = path;
     }
@@ -136,7 +136,7 @@ public class KeyStoreFramework
      * 
      * @param temperaryPath
      */
-    public final void setTemperaryPath( String temperaryPath ) 
+    protected final void setTemperaryPath( String temperaryPath ) 
     {
         this.temperaryPath = temperaryPath;
     }
