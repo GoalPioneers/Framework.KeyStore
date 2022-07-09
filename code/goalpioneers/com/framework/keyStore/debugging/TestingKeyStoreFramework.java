@@ -8,5 +8,8 @@ package goalpioneers.com.framework.keyStore.debugging;
  */
 public class TestingKeyStoreFramework 
 {
-    
+    public static void main( String[] args )
+    {
+        
+    }
 }
