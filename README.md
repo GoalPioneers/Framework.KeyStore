@@ -7,3 +7,17 @@
 ## Content
 1. [License](LICENSE.md)
 2. [Documentation](docs/readme.md)
+
+
+## Prototype
+* A Key Store where elements are saved by their associated key.
+* In-Memory - Primary Goal
+
+Persistence Options - Keep in mind their optional:
+* Local
+  * Temperary files
+  * 'Permanent' files
+
+* Online
+  * MySQL
+  * Redis
