@@ -1,15 +1,26 @@
 package goalpioneers.com.framework.keyStore.framework.hashes.files;
 
 
+/**
+ * 
+ */
 public class KeyStoreFilesSHA512Hash 
     extends KeyStoreHashFilesBaseTemplate
 {
+    /**
+     * 
+     */
     @Override
     public void generate() 
     {
         
     }
     
+    
+    /**
+     * 
+     * @return
+     */
     @Override
     public String toString() 
     {
