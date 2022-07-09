@@ -4,7 +4,8 @@ import goalpioneers.com.framework.keyStore.framework.hashes.KeyStoreHash;
 
 
 /**
- * 
+ * @author Kent Madsen
+ * @author Goal Pioneers
  */
 public interface KeyStoreElement 
 {

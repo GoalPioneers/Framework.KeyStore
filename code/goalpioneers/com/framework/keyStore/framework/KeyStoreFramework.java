@@ -27,7 +27,7 @@ public class KeyStoreFramework
      */
     public KeyStoreFramework( String defaultPath )
     {
-        
+        this.setPath( defaultPath );
     }
     
     

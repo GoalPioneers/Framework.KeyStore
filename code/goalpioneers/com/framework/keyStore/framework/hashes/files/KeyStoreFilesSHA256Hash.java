@@ -1,7 +1,8 @@
 package goalpioneers.com.framework.keyStore.framework.hashes.files;
 
 /**
- * 
+ * @author Kent Madsen
+ * @author Goal Pioneers
  */
 public class KeyStoreFilesSHA256Hash 
     extends KeyStoreHashFilesBaseTemplate
