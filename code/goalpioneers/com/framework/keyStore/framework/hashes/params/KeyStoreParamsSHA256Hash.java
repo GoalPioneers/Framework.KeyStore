@@ -1,8 +1,8 @@
-package goalpioneers.com.framework.keyStore.framework.hashes;
+package goalpioneers.com.framework.keyStore.framework.hashes.params;
 
 
-public class KeyStoreSHA1Hash 
-    extends KeyStoreHashBaseTemplate
+public class KeyStoreParamsSHA256Hash 
+    extends KeyStoreHashParamsBaseTemplate
 {
     @Override
     public void generate() 

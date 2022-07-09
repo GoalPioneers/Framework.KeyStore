@@ -1,8 +1,8 @@
-package goalpioneers.com.framework.keyStore.framework.hashes;
+package goalpioneers.com.framework.keyStore.framework.hashes.params;
 
 
-public class KeyStoreMD5Hash 
-    extends KeyStoreHashBaseTemplate
+public class KeyStoreParamsMD5Hash 
+    extends KeyStoreHashParamsBaseTemplate
 {
     @Override
     public void generate() 

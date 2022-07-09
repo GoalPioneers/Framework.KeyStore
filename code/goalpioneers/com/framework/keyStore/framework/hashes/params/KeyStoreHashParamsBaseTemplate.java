@@ -1,6 +1,8 @@
-package goalpioneers.com.framework.keyStore.framework.hashes;
+package goalpioneers.com.framework.keyStore.framework.hashes.params;
 
-public abstract class KeyStoreHashBaseTemplate 
+import goalpioneers.com.framework.keyStore.framework.hashes.KeyStoreHash;
+
+public abstract class KeyStoreHashParamsBaseTemplate 
         implements KeyStoreHash
 {
     private String hash = null;
