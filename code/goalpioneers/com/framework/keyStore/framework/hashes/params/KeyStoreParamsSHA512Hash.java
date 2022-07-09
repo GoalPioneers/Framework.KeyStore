@@ -2,7 +2,8 @@ package goalpioneers.com.framework.keyStore.framework.hashes.params;
 
 
 /**
- * 
+ * @author Kent Madsen
+ * @author Goal Pioneers
  */
 public class KeyStoreParamsSHA512Hash 
     extends KeyStoreHashParamsBaseTemplate

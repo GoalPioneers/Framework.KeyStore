@@ -13,14 +13,14 @@ public interface KeyStoreInterface
      * @param element
      */
     public void store( String key, 
-                       KeyStoreElement element );
+                       KeyStoreGroup element );
     
     /**
      * Retrieves an object from memory
      * @param key
      * @return
      */
-    public KeyStoreElement retrieve( String key );
+    public KeyStoreGroup retrieve(String key );
     
     
     /**

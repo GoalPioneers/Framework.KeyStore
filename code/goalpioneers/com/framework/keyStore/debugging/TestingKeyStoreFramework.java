@@ -3,6 +3,7 @@ package goalpioneers.com.framework.keyStore.debugging;
 
 import goalpioneers.com.framework.keyStore.framework.KeyStoreFramework;
 
+
 /**
  * Class which purpose is to test the framework and make sure that it functions as intended.
  * @author Kent Madsen
@@ -16,7 +17,7 @@ public class TestingKeyStoreFramework
     public TestingKeyStoreFramework()
     {
         this.setFramework( 
-                new KeyStoreFramework() 
+                new KeyStoreFramework("D:\\development" )
         );
     }
     
@@ -29,6 +30,8 @@ public class TestingKeyStoreFramework
     public void run()
     {
         
+        
+        framework.garbageCollection();
     }
     
     
