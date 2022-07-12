@@ -1,8 +1,8 @@
 package goalpioneers.com.framework.keyStore.framework;
 
 
+import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreFacade;
 import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreGroup;
-import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
 
 
 /**
@@ -11,7 +11,7 @@ import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface
  * @author Goal Pioneers
  */
 public class KeyStoreFramework 
-        implements KeyStoreInterface
+        implements KeyStoreFacade
 {
     // Constructors
     /**

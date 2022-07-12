@@ -1,7 +1,7 @@
 package goalpioneers.com.framework.keyStore;
 
 import goalpioneers.com.framework.keyStore.framework.KeyStoreFramework;
-import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
+import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreFacade;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,7 +26,7 @@ public class RegistryStore
     
     
     // Variables
-    private static List< KeyStoreInterface > stored = null;
+    private static List<KeyStoreFacade> stored = null;
     
     
     //
@@ -90,7 +90,7 @@ public class RegistryStore
      * 
      * @return
      */
-    public static List< KeyStoreInterface > getStored() 
+    public static List<KeyStoreFacade> getStored() 
     {
         if( stored == null )
         {
@@ -105,7 +105,7 @@ public class RegistryStore
      * 
      * @param stored
      */
-    public static void setStored( List<KeyStoreInterface> stored ) 
+    public static void setStored( List<KeyStoreFacade> stored ) 
     {
         RegistryStore.stored = stored;
     }

@@ -2,7 +2,7 @@ package goalpioneers.com.framework.keyStore;
 
 
 import goalpioneers.com.framework.keyStore.framework.KeyStoreFramework;
-import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
+import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreFacade;
 
 
 /**
@@ -15,7 +15,7 @@ public class RegistrySingleton
     /**
      * Main Store
      */
-    private static KeyStoreInterface KStore = null;
+    private static KeyStoreFacade KStore = null;
     
     
     
@@ -23,7 +23,7 @@ public class RegistrySingleton
      * 
      * @return
      */
-    public static KeyStoreInterface getStore()
+    public static KeyStoreFacade getStore()
     {
         if( KStore == null )
         {
@@ -40,7 +40,7 @@ public class RegistrySingleton
      * 
      * @param store
      */
-    protected static void setStore( KeyStoreInterface store )
+    protected static void setStore( KeyStoreFacade store )
     {
         KStore = store; 
     }

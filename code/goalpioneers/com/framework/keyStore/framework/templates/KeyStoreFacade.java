@@ -2,11 +2,13 @@ package goalpioneers.com.framework.keyStore.framework.templates;
 
 
 /**
+ * Interface to interact with the store
  * @author Kent Madsen
  * @author Goal Pioneers
  */
-public interface KeyStoreInterface 
+public interface KeyStoreFacade 
 {
+    // Interact with storage
     /**
      * Saves an object in memory.
      * @param key
@@ -20,7 +22,7 @@ public interface KeyStoreInterface
      * @param key
      * @return
      */
-    public KeyStoreGroup retrieve(String key );
+    public KeyStoreGroup retrieve( String key );
     
     /**
      * removal of an object in memory
@@ -29,6 +31,16 @@ public interface KeyStoreInterface
     public void remove( String key );
     
     
+    // States
+    /**
+     *
+     * @param key
+     * @return
+     */
+    public boolean existKey( String key );
+    
+    
+    // Maintainability
     /**
      * Optimizes the algorithm
      */
@@ -38,12 +50,4 @@ public interface KeyStoreInterface
      * Get rid of files
      */
     public void garbageCollection();
-    
-    
-    /**
-     * 
-     * @param key
-     * @return
-     */
-    public boolean existKey( String key );
 }
