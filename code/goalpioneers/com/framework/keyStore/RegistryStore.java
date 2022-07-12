@@ -1,42 +1,49 @@
 package goalpioneers.com.framework.keyStore;
 
-import goalpioneers.com.framework.keyStore.framework.KeyStoreFramework;
 import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
 
+import java.util.ArrayList;
+import java.util.List;
 
 /**
+ *
  * @author Kent Madsen
  * @author Goal Pioneers
  */
-public class RegistryStore 
+public class RegistryStore
 {
-    /**
-     * 
-     */
-    private static KeyStoreInterface KStore = null;
+    public RegistryStore()
+    {
+        
+    }
     
     
+    // Variables
+    private static List< KeyStoreInterface > stored = null;
+    
+    
+    // Variables
     /**
      * 
      * @return
      */
-    public static KeyStoreInterface getStore()
+    public static List< KeyStoreInterface > getStored() 
     {
-        if( KStore == null )
+        if( stored == null )
         {
-            setStore( new KeyStoreFramework() );
+            stored = new ArrayList<>();
         }
         
-        return KStore;
+        return stored;
     }
     
     
     /**
      * 
-     * @param store
+     * @param stored
      */
-    protected static void setStore( KeyStoreInterface store )
+    public static void setStored( List<KeyStoreInterface> stored ) 
     {
-        KStore = store; 
+        RegistryStore.stored = stored;
     }
 }

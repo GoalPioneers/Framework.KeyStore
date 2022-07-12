@@ -22,7 +22,6 @@ public interface KeyStoreInterface
      */
     public KeyStoreGroup retrieve(String key );
     
-    
     /**
      * removal of an object in memory
      * @param key
@@ -35,9 +34,16 @@ public interface KeyStoreInterface
      */
     public void optimize();
     
-    
     /**
      * Get rid of files
      */
     public void garbageCollection();
+    
+    
+    /**
+     * 
+     * @param key
+     * @return
+     */
+    public boolean existKey( String key );
 }
