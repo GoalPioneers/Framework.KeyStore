@@ -119,6 +119,16 @@ public class KeyStoreFramework
         
     }
     
+    
+    /**
+     * 
+     */
+    @Override
+    public void updateState() 
+    {
+        
+    }
+    
     /**
      * 
      * @param key
@@ -138,7 +148,7 @@ public class KeyStoreFramework
      */
     public final boolean isUsePersistence() 
     {
-        return usePersistence;
+        return this.usePersistence;
     }
     
     /**
@@ -147,7 +157,7 @@ public class KeyStoreFramework
      */
     public final String getPath() 
     {
-        return path;
+        return this.path;
     }
     
     /**
@@ -156,8 +166,9 @@ public class KeyStoreFramework
      */
     public final String getTemperaryPath() 
     {
-        return temperaryPath;
+        return this.temperaryPath;
     }
+    
     
     /**
      * 
@@ -165,7 +176,7 @@ public class KeyStoreFramework
      */
     public final boolean isUseTemperaryState() 
     {
-        return useTemperaryState;
+        return this.useTemperaryState;
     }
     
     /**
@@ -174,7 +185,7 @@ public class KeyStoreFramework
      */
     public final boolean isUseIndex() 
     {
-        return useIndex;
+        return this.useIndex;
     }
     
     
@@ -226,6 +237,7 @@ public class KeyStoreFramework
     }
     
     
+    // States
     /**
      * 
      * @return

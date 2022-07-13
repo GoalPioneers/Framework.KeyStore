@@ -4,15 +4,21 @@ import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreFacade;
 
 
 /**
- * 
- * @param <Type>
+ * @author Kent Madsen
+ * @author Goal Pioneers
+ * @param <Type> expected result
  */
 public class KeyStoreElementConversion< Type > 
 {
+    /**
+     * 
+     * @param ksInterface
+     */
     public KeyStoreElementConversion( KeyStoreFacade ksInterface )
     {
         this.setKsi( ksInterface );
     }
+    
     
     // Variables
     private KeyStoreFacade ksi = null;

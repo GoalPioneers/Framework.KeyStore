@@ -50,4 +50,10 @@ public interface KeyStoreFacade
      * Get rid of files
      */
     public void garbageCollection();
+    
+    
+    /**
+     * Updates and appends new changes made to the system.
+     */
+    public void updateState();
 }
