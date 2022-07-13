@@ -13,7 +13,6 @@ public interface KeyStoreHash
     public void generate();
     
     
-    
     /**
      * 
      * @return

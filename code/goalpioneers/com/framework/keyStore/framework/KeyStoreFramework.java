@@ -1,7 +1,8 @@
 package goalpioneers.com.framework.keyStore.framework;
 
+
+import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreFacade;
 import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreGroup;
-import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
 
 
 /**
@@ -10,7 +11,7 @@ import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface
  * @author Goal Pioneers
  */
 public class KeyStoreFramework 
-        implements KeyStoreInterface
+        implements KeyStoreFacade
 {
     // Constructors
     /**
@@ -38,12 +39,28 @@ public class KeyStoreFramework
      */
     private String path = null;
     
-    
     /**
      * The default directory to save temperary data. 
      * "keep in mind it's not required" for it to function.
      */
     private String temperaryPath = null;
+    
+    
+    /**
+     * 
+     */
+    private boolean useTemperaryState = false;
+    
+    /**
+     * 
+     */
+    private boolean usePersistence = false;
+    
+    
+    /**
+     * 
+     */
+    private boolean useIndex = false;
     
     
     // Code
@@ -103,14 +120,44 @@ public class KeyStoreFramework
     }
     
     
+    /**
+     * 
+     */
+    @Override
+    public void updateState() 
+    {
+        
+    }
+    
+    /**
+     * 
+     * @param key
+     * @return
+     */
+    @Override
+    public boolean existKey( String key ) 
+    {
+        return false;
+    }
+    
+    
     // Accessors
+    /**
+     * 
+     * @return
+     */
+    public final boolean isUsePersistence() 
+    {
+        return this.usePersistence;
+    }
+    
     /**
      * 
      * @return
      */
     public final String getPath() 
     {
-        return path;
+        return this.path;
     }
     
     /**
@@ -119,7 +166,26 @@ public class KeyStoreFramework
      */
     public final String getTemperaryPath() 
     {
-        return temperaryPath;
+        return this.temperaryPath;
+    }
+    
+    
+    /**
+     * 
+     * @return
+     */
+    public final boolean isUseTemperaryState() 
+    {
+        return this.useTemperaryState;
+    }
+    
+    /**
+     * 
+     * @return
+     */
+    public final boolean isUseIndex() 
+    {
+        return this.useIndex;
     }
     
     
@@ -142,6 +208,36 @@ public class KeyStoreFramework
     }
     
     
+    /**
+     * 
+     * @param usePersistence
+     */
+    public void setUsePersistence( boolean usePersistence ) 
+    {
+        this.usePersistence = usePersistence;
+    }
+    
+    
+    /**
+     * 
+     * @param useTemperaryState
+     */
+    public final void setUseTemperaryState( boolean useTemperaryState ) 
+    {
+        this.useTemperaryState = useTemperaryState;
+    }
+    
+    /**
+     * 
+     * @param useIndex
+     */
+    public void setUseIndex( boolean useIndex ) 
+    {
+        this.useIndex = useIndex;
+    }
+    
+    
+    // States
     /**
      * 
      * @return

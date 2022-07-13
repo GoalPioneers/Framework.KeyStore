@@ -1,42 +1,112 @@
 package goalpioneers.com.framework.keyStore;
 
 import goalpioneers.com.framework.keyStore.framework.KeyStoreFramework;
-import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreInterface;
+import goalpioneers.com.framework.keyStore.framework.templates.KeyStoreFacade;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**
+ *
  * @author Kent Madsen
  * @author Goal Pioneers
  */
-public class RegistryStore 
+public class RegistryStore
+    implements Store
 {
+    // Constructors
     /**
      * 
      */
-    private static KeyStoreInterface KStore = null;
+    public RegistryStore()
+    {
+        
+    }
     
+    
+    // Variables
+    private static List<KeyStoreFacade> stored = null;
+    
+    
+    //
+    /**
+     * 
+     * @param framework
+     */
+    @Override
+    public void add( KeyStoreFramework framework ) 
+    {
+        
+    }
+    
+    /**
+     *
+     * @param id
+     * @return
+     */
+    @Override
+    public boolean delete( int id )
+    {
+        return false;
+    }
+    
+    /**
+     * 
+     * @param id
+     * @return
+     */
+    @Override
+    public KeyStoreFramework retrieve( int id ) 
+    {
+        return null;
+    }
     
     /**
      * 
      * @return
      */
-    public static KeyStoreInterface getStore()
+    @Override
+    public int size() 
     {
-        if( KStore == null )
-        {
-            setStore( new KeyStoreFramework() );
-        }
-        
-        return KStore;
+        return 0;
     }
     
     
     /**
      * 
-     * @param store
+     * @param framework
+     * @return
      */
-    protected static void setStore( KeyStoreInterface store )
+    @Override
+    public boolean inSet( KeyStoreFramework framework ) 
     {
-        KStore = store; 
+        return false;
+    }
+    
+    
+    // Variables
+    /**
+     * 
+     * @return
+     */
+    public static List<KeyStoreFacade> getStored() 
+    {
+        if( stored == null )
+        {
+            stored = new ArrayList<>();
+        }
+        
+        return stored;
+    }
+    
+    
+    /**
+     * 
+     * @param stored
+     */
+    public static void setStored( List<KeyStoreFacade> stored ) 
+    {
+        RegistryStore.stored = stored;
     }
 }

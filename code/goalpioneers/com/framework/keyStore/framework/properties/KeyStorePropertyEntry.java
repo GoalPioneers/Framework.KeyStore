@@ -8,6 +8,10 @@ package goalpioneers.com.framework.keyStore.framework.properties;
 public abstract class KeyStorePropertyEntry 
 {
     // constructors
+    /**
+     * 
+     * @param labelName
+     */
     public KeyStorePropertyEntry( String labelName )
     {
         this.setName( labelName );
@@ -19,7 +23,7 @@ public abstract class KeyStorePropertyEntry
     
     
     // accessors
-    // getters
+        // getters
     /**
      * 
      * @return
